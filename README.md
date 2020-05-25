@@ -5,8 +5,6 @@ Backend of FYA Application!
 
  ![](/images/header.png)
  
- docker run --name fya -e POSTGRES_PASSWORD=@fya_ -e POSTGRES_USER=fya -p 5432:5432 -d postgres
-
 ### Installation
 Follow the steps to start the application on you environment: 
 1. Download and Install Docker at `https://www.docker.com/products/docker-desktop`
