@@ -18,23 +18,24 @@ Follow the steps to start the application on you environment:
 9. Start the server :D `adonis serve --dev`
 <br><br>
 
+## Open routes in Insomnia
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=FYA&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fgu1ma%2FFYA_Backend%2Fmaster%2Fexport_routes.json)
+
 ## Releases
 
-  * 1.0.0
-    * User Sign Up.
-    * Tacher Sign Up.
-    * User Sign In implemented with session and logout.
+  * 0.0.1 (Beta version)
+    * User (Normal and Teacher) Sign Up.
+    * User Sign In with session and logout.
     * Sports Sing Up 
     * Create Event 
     * Subscribe on event
   
 ## Technologies:
    **NodeJS, Yarn, NPM, Adonis, Docker, POSTGRES**
-  
 
 ## Branches
 
 ![](/images/git.png)
 
-Developed by KLineApps.
+Developed by [__KLineApps.__](https://github.com/KLineApps)
 
