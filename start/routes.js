@@ -33,3 +33,6 @@ Route.post('sports', 'SportController.store')
 
 Route.get('events', 'EventController.index')
 Route.post('events', 'EventController.store').middleware('auth')
+
+Route.get('event-subscribe', 'SubscriptionController.index').middleware('auth')
+Route.post('event-subscribe', 'SubscriptionController.store').middleware('auth')
