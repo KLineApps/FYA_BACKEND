@@ -8,7 +8,7 @@ const Env = use('Env')
 
 class UserController {
   async store ({ request, response }) {
-    const data = request.only(['username', 'email', 'password', 'name'])
+    const data = request.only(['username', 'email', 'password', 'name', 'profile_type', 'cref'])
     const photoProfile = request.input('photoProfile')
 
     try {
