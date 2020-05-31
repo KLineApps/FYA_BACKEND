@@ -1,6 +1,7 @@
 'use strict'
 
 const Event = use('App/Models/Event')
+const User = use('App/Models/User')
 
 class EventController {
   async index ({ request, response }) {
@@ -9,6 +10,14 @@ class EventController {
 
   async store ({ request, response, auth }) {
     try {
+      const user = await User.findOrFail(auth.user.id)
+
+      if (user.profile_type !== 'teacher') {
+        return response.status(401).send({
+          message: 'Ops... somente professores são capazes de criar eventos'
+        })
+      }
+
       const eventRequestData = request.only([
         'name',
         'desc',
