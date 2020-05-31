@@ -30,3 +30,9 @@ Route.get('/files/:name', 'FileController.index')
 Route.get('sports', 'SportController.index')
 Route.get('sports/:id', 'SportController.index')
 Route.post('sports', 'SportController.store')
+
+Route.get('events', 'EventController.index')
+Route.post('events', 'EventController.store').middleware('auth')
+
+Route.get('event-subscribe', 'SubscriptionController.index').middleware('auth')
+Route.post('event-subscribe', 'SubscriptionController.store').middleware('auth')

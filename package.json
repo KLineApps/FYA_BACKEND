@@ -31,7 +31,7 @@
     "adonis-fold": "^3.0.3",
     "moment": "^2.25.0",
     "pg": "^7.18.2",
-    "sharp": "^0.25.2"
+    "sharp": "^0.25.3"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
